@@ -1,9 +1,11 @@
-# mount point	fstype		device			[device2]   fstype2
+# mount point	fstype		device			[device2]                       fstype2
 
-/recovery	emmc		/dev/block/mmcblk***
-/boot		emmc		/dev/block/mmcblk***
-/cache		ext4		/dev/block/mmcblk***    NULL       
-/data		ext4		/dev/block/mmcblk***    NULL       
-/sdcard		vfat		/dev/block/mmcblk***	
-/system		ext4		/dev/block/mmcblk0p8   NULL       
+/recovery	mtd		recovery
+/boot		mtd	        boot
+/radio		mtd		radio
+
+/cache		yaffs2		cache                    /dev/block/mmcblk0p1           ext4
+/data		yaffs2		data                     /dev/block/mmcblk0p4           ext4
+/sdcard		vfat		/dev/block/mmcblk	
+/system		yaffs2		system                   /dev/block/mmcblk0p1           ext4
 
