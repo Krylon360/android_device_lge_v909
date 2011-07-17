@@ -22,6 +22,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
     $(LOCAL_PATH)/prebuilt/wireless.ko:system/lib/modules/wireless.ko
 
-PRODUCT_NAME := lge_startablet
+PRODUCT_NAME := lge_v909
 PRODUCT_DEVICE := v909
 PRODUCT_MODEL := LG-V909
